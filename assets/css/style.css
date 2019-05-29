@@ -1,24 +1,55 @@
 body {
+    background-color: darkslategrey;
+}
 
-    background-image: url(https://www.bing.com/th?id=OIP.qiPZV8sNKQ4uAIRn1sWGGgHaDt&pid=Api&w=700&h=350&rs=1&p=0);
-    background-size: 100%;
+.title {
+    color: whitesmoke;
+    background-color: darkred;
+    width: 100%;
+    margin: 25px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-    background-color: white;
+    font-size: 200%;
     text-align: center;
-	margin: 10px;
-    width: 35%;
-    border: 6px solid;
+    border: solid 20px black;
 }
 
-.instructions{
-    background-color: gray;  
+.instructions {
+    color: yellow;
+    background-color: blue;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
     text-align: left;
-    color:ghostwhite;
-    margin: 10px;
-    width: 50%;
-    border: 6px solid;
-    border-color:black;
+    border: solid 50px black;
+
+}
+
+.scoreRecord {
+    color: black;
+    background-color: green;
+    font: bold;
+    border: solid 20px black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.crystals {
+    float: left;
+	width: 25%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+	display: table;
+}
+
+.score {
+    text-align: center;
+    font: bold;
+    color: azure;
 }
